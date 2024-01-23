@@ -7,11 +7,6 @@ public class LetterCount {
 
         List<String> listNames = List.of(names);
 
-//        return Arrays.stream(names).sequential()
-//                .filter(s->s.length() > 5)
-//                .mapToInt(String::length)
-//                .sum();
-
         return listNames.stream()
                 .filter(s->s.length() > 5)
                 .mapToInt(String::length)
